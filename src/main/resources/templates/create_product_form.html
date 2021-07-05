@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>MarketProject</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h2>Enter id, name and cost of product</h2>
+    <form method="post" th:action="@{/create_product}">
+        <input type="number" name="id"> id <Br>
+        <input type="text" name="title"> Name <Br>
+        <input type="number" name="cost"> Cost <Br>
+        <button class="btn btn-primary" type="submit">Create product</button>
+    </form>
+</div>
+</body>
+</html>
